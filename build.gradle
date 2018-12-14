@@ -14,7 +14,7 @@ jar {
                 'Main-Class': 'net.mcreator.minecraft.link.raspberrypi.Service',
         )
     }
-    from('/') {
+    from('.') {
         include 'LICENSE'
         include 'NOTICE'
         into '/'
