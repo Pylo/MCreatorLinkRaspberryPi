@@ -1,7 +1,8 @@
 language: java
+install: gradle wrapper --gradle-version 3.0
 jdk:
   - oraclejdk8
-before_install:
+before_script:
   - chmod +x gradlew
 script:
   - ./gradlew build
