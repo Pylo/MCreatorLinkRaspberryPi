@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://oss.sonatype.org/content/groups/public'
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'net.mcreator.minecraft.link.raspberrypi.Service',
+        )
+    }
+    from('/') {
+        include 'LICENSE'
+        include 'NOTICE'
+        into '/'
+    }
+}
+
+dependencies {
+    compile 'com.pi4j:pi4j-core:1.2-SNAPSHOT'
+}
