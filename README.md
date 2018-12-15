@@ -14,6 +14,8 @@ To install the latest version of Minecraft Link for Raspeberry Pi, run the follo
 curl -sL http://mcreator.net/linkpi | sudo bash
 ```
 
+After the setup is complete, the service called minecraftlink will be started. Just setup your GPIO connections and you can connect to your Raspberry Pi via Minecraft Link interface if the computer and the Raspberry Pi are on the same network.
+
 For manual installation, check the contents of setup.sh file in this repository.
 
 Detailed setup instructions can be found on the Minecraft Link official website: https://mcreator.net/link
