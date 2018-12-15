@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run the following line to setup Minecraft Link Service on your Pi:
-# curl -sL http://mcreator.net/linkpi | bash
+# curl -sL http://mcreator.net/linkpi | sudo bash
 
 # WARNING!!! THIS SCRIPT REQUIRES INTERNET CONNECTION!!
 
