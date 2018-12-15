@@ -46,7 +46,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/minecraftlink
-ExecStart=/bin/bash -c "sudo java -cp '.:minecraft-link-raspberrypi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
+ExecStart=/bin/bash -c "sudo java -cp '.:minecraft_link_pi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
 Restart=always
 User=root
  
