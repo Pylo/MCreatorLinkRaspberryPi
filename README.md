@@ -8,4 +8,12 @@ Main repository: https://github.com/Pylo/MinecraftLink
 
 ## Setup and getting started
 
-Setup instructions can be found on the Minecraft Link official website: https://mcreator.net/link
+To install the latest version of Minecraft Link for Raspeberry Pi, run the following command on your Raspberry Pi connected to the internet:
+
+```
+curl -sL http://mcreator.net/linkpi | sudo bash
+```
+
+For manual installation, check the contents of setup.sh file in this repository.
+
+Detailed setup instructions can be found on the Minecraft Link official website: https://mcreator.net/link
