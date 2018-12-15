@@ -28,10 +28,10 @@ echo Downloading Minecraft Link
 echo ====================================================
 
 # we make install dir
-sudo mkdir /usr/minecraftlink
+sudo mkdir /opt/minecraftlink
 
 # download Minecraft Link
-sudo wget https://github.com/Pylo/MinecraftLinkRaspberryPi/releases/download/1.0-beta/minecraft-link-raspberrypi.jar -P /usr/minecraftlink -O minecraft_link_pi.jar
+sudo wget -O /opt/minecraftlink/minecraft_link_pi.jar https://github.com/Pylo/MinecraftLinkRaspberryPi/releases/download/1.0-beta/minecraft-link-raspberrypi.jar
 
 echo ====================================================
 echo Installing Minecraft Link service
@@ -45,7 +45,7 @@ After=network.target
  
 [Service]
 Type=simple
-WorkingDirectory=/usr/minecraftlink
+WorkingDirectory=/opt/minecraftlink
 ExecStart=/bin/bash -c "sudo java -cp '.:minecraft-link-raspberrypi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
 Restart=always
 User=root
