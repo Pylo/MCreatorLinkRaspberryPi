@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Run the following line to setup Minecraft Link Service on your Pi:
+# curl -sL http://mcreator.net/linkpi | bash
+
 # WARNING!!! THIS SCRIPT REQUIRES INTERNET CONNECTION!!
 
 echo ====================================================
@@ -16,7 +19,9 @@ echo Installing Pi4j
 echo ====================================================
 
 # install pi4j
-curl -s get.pi4j.com | sudo bash
+cd /tmp
+sudo wget http://get.pi4j.com/download/pi4j-1.2-SNAPSHOT.deb
+sudo dpkg -i pi4j-1.2-SNAPSHOT.deb
 
 echo ====================================================
 echo Downloading Minecraft Link
@@ -26,7 +31,8 @@ echo ====================================================
 sudo mkdir /usr/minecraftlink
 
 # download Minecraft Link
-sudo wget https://www.pylo.co/static/mcreator/link/pi/minecraft_link_1.0_pi.jar -P /usr/minecraftlink
+latest_url = $(curl -s https://api.github.com/repos/Pylo/MinecraftLink/releases/latest | grep browser_download_url | cut -d '"' -f 4)
+sudo wget $(latest_url) -P /usr/minecraftlink -O minecraft_link_pi.jar
 
 echo ====================================================
 echo Installing Minecraft Link service
@@ -41,9 +47,9 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/usr/minecraftlink
-ExecStart=/bin/bash -c "java -jar /usr/minecraftlink/minecraft_link_1.0_pi.jar"
+ExecStart=/bin/bash -c "sudo java -cp '.:minecraft-link-raspberrypi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
 Restart=always
-User=pi
+User=root
  
 [Install]
 WantedBy=multi-user.target
