@@ -1,4 +1,4 @@
-# Minecraft Link: Raspberry Pi [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Pylo/MinecraftLinkRaspberryPi/blob/master/LICENSE) [![Build Status](https://travis-ci.com/Pylo/MinecraftLinkRaspberryPi.svg?branch=master)](https://travis-ci.com/Pylo/MinecraftLinkRaspberryPi)
+# ![Minecraft Link](https://www.pylo.co/static/mcreator/link/link_small.png): Raspberry Pi [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Pylo/MinecraftLinkRaspberryPi/blob/master/LICENSE) [![Build Status](https://travis-ci.com/Pylo/MinecraftLinkRaspberryPi.svg?branch=master)](https://travis-ci.com/Pylo/MinecraftLinkRaspberryPi)
 
 This repository contains the implementation of the Minecraft Link for the Raspberry Pi devices.
 
