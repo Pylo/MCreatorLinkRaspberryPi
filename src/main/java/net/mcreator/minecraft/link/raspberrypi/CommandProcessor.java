@@ -46,7 +46,7 @@ class CommandProcessor {
 		switch (command) {
 		case "ident":
 			Service.networkInterface.sendUDPPacket(
-					"tnedi:Minecraft Link (1.0);" + Service.raspberryIO.getBoard().name().replace("_", " ") + "; "
+					"tnedi:Minecraft Link (1.1);" + Service.raspberryIO.getBoard().name().replace("_", " ") + "; "
 							+ Service.raspberryIO.getDigitalPinCount() + ";" + RaspberryPiIO.ANALOG_PIN_COUNT + "\n ",
 					packet.getAddress(), packet.getPort());
 			break;
