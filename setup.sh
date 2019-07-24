@@ -31,7 +31,7 @@ echo ====================================================
 sudo mkdir /opt/minecraftlink
 
 # download Minecraft Link
-sudo wget -O /opt/minecraftlink/minecraft_link_pi.jar https://github.com/Pylo/MinecraftLinkRaspberryPi/releases/download/1.0-beta/minecraft-link-raspberrypi.jar
+sudo wget -O /opt/minecraftlink/minecraft_link_pi.jar https://github.com/Pylo/MinecraftLinkRaspberryPi/releases/download/1.1/minecraft-link-raspberrypi.jar
 
 echo ====================================================
 echo Installing Minecraft Link service
