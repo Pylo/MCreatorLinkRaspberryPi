@@ -1,4 +1,4 @@
-![MCreator Link](https://www.pylo.co/static/mcreator/link/link_small.png)
+![MCreator Link](https://www.pylo.co/static/mcreator/link/link_small.png?)
 
 # MCreator Link: Raspberry Pi [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Pylo/MCreatorLinkRaspberryPi/blob/master/LICENSE) [![Build Status](https://travis-ci.com/Pylo/MCreatorLinkRaspberryPi.svg?branch=master)](https://travis-ci.com/Pylo/MCreatorLinkRaspberryPi)
 
