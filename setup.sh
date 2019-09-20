@@ -31,7 +31,7 @@ echo ====================================================
 sudo mkdir /opt/mcreatorlink
 
 # download MCreator Link
-sudo wget -O /opt/mcreatorlink/minecraft_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.1/minecraft-link-raspberrypi.jar
+sudo wget -O /opt/mcreatorlink/mcreator_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.1/minecraft-link-raspberrypi.jar
 
 echo ====================================================
 echo Installing MCreator Link service
@@ -46,7 +46,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/mcreatorlink
-ExecStart=/bin/bash -c "sudo java -cp '.:minecraft_link_pi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
+ExecStart=/bin/bash -c "sudo java -cp '.:mcreator_link_pi.jar:/opt/pi4j/lib/*' net.mcreator.minecraft.link.raspberrypi.Service"
 Restart=always
 User=root
  
