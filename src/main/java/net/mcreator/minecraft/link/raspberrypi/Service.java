@@ -37,7 +37,7 @@ public class Service {
 	static LinkNetworkInterface networkInterface;
 
 	/**
-	 * Main method to start the Minecraft Link Raspberry Pi Service
+	 * Main method to start the MCreator Link Raspberry Pi Service
 	 *
 	 * @param args Right now, no arguments are accepted
 	 */
