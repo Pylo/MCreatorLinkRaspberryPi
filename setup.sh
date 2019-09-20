@@ -31,7 +31,7 @@ echo ====================================================
 sudo mkdir /opt/mcreatorlink
 
 # download MCreator Link
-sudo wget -O /opt/mcreatorlink/mcreator_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.2/mcreator-link-raspberrypi.jar
+sudo wget -O /opt/mcreatorlink/mcreator_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.2/mcreator_link_1.2_pi.jar
 
 echo ====================================================
 echo Installing MCreator Link service
