@@ -27,9 +27,9 @@ class RaspberryPiIO {
 
 	static final int ANALOG_PIN_COUNT = 0;
 
-	private SystemInfo.BoardType board;
-	private Map<Integer, GpioPinDigitalMultipurpose> multipurposePins = new HashMap<>();
-	private int digitalPinCount;
+	private final SystemInfo.BoardType board;
+	private final Map<Integer, GpioPinDigitalMultipurpose> multipurposePins = new HashMap<>();
+	private final int digitalPinCount;
 
 	/**
 	 * Call this method to setup IO, count pins and map them

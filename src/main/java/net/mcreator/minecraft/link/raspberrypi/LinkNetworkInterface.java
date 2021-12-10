@@ -28,7 +28,7 @@ class LinkNetworkInterface {
 
 	private static final Logger LOGGER = Logger.getLogger(LinkNetworkInterface.class.getName());
 
-	private MulticastSocket socket;
+	private final MulticastSocket socket;
 
 	/**
 	 * This class takes care of the Link network communication
