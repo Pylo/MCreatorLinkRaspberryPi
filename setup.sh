@@ -20,8 +20,8 @@ echo ====================================================
 
 # install pi4j
 cd /tmp
-sudo wget http://get.pi4j.com/download/pi4j-1.2-SNAPSHOT.deb
-sudo dpkg -i pi4j-1.2-SNAPSHOT.deb
+sudo wget https://pi4j.com/download/pi4j-1.4.deb
+sudo dpkg -i pi4j-1.4.deb
 
 echo ====================================================
 echo Downloading MCreator Link
@@ -31,7 +31,7 @@ echo ====================================================
 sudo mkdir /opt/mcreatorlink
 
 # download MCreator Link
-sudo wget -O /opt/mcreatorlink/mcreator_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.2/mcreator_link_1.2_pi.jar
+sudo wget -O /opt/mcreatorlink/mcreator_link_pi.jar https://github.com/Pylo/MCreatorLinkRaspberryPi/releases/download/1.3/mcreator_link_1.3_pi.jar
 
 echo ====================================================
 echo Installing MCreator Link service
